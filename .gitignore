@@ -1,3 +1,10 @@
+# CODESYS files
+*.opt
+*.~u
+*.compileinfo
+*.bootinfo
+*.bootinfo_guids
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
