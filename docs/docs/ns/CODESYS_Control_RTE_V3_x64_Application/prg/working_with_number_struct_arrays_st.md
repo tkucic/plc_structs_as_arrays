@@ -17,26 +17,26 @@ END_INTERFACE
 PROGRAM working_with_number_struct_arrays:
     // WORKING WITH NUMBER STRUCT ARRAYS
 
-//This returns index 1 of the struct
-resultNum := getInt32(nums, 1);
+    //This returns index 1 of the struct
+    resultNum := getInt32(nums, 1);
 
-//This will copy over the struct array to another array
-//movedNums := nums;
-// OR
-FOR i:=0 TO 31 DO
-	setInt32(movedNums, i, getInt32(nums, i));
-END_FOR
+    //This will copy over the struct array to another array
+    //movedNums := nums;
+    // OR
+    FOR i:=0 TO 31 DO
+    	setInt32(movedNums, i, getInt32(nums, i));
+    END_FOR
 
-//This will initialize/reset/fill the struct array with some values
-FOR i:=0 TO 31 DO
-	setInt32(initNums, i, i);
-END_FOR
+    //This will initialize/reset/fill the struct array with some values
+    FOR i:=0 TO 31 DO
+    	setInt32(initNums, i, i);
+    END_FOR
 
-//This will increment every index by one each cycle
-FOR i:=0 TO 31 DO
-	currentNum := getInt32(incrementingNums, i);
-	setInt32(incrementingNums, i, currentNum + 1);
-END_FOR
+    //This will increment every index by one each cycle
+    FOR i:=0 TO 31 DO
+    	currentNum := getInt32(incrementingNums, i);
+    	setInt32(incrementingNums, i, currentNum + 1);
+    END_FOR
 
 
 

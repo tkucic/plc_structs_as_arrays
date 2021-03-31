@@ -14,45 +14,45 @@ INTERFACE
 END_INTERFACE
 FUNCTION setDword32 :
     CASE ix OF
-	0: data.ix00 := value; (*Set index 0 of the data struct with the value*)
-	1: data.ix01 := value; (*Set index 1 of the data struct with the value*)
-	2: data.ix02 := value; (*Set index 2 of the data struct with the value*)
-	3: data.ix03 := value; (*Set index 3 of the data struct with the value*)
-	4: data.ix04 := value; (*Set index 4 of the data struct with the value*)
-	5: data.ix05 := value; (*Set index 5 of the data struct with the value*)
-	6: data.ix06 := value; (*Set index 6 of the data struct with the value*)
-	7: data.ix07 := value; (*Set index 7 of the data struct with the value*)
-	8: data.ix08 := value; (*Set index 8 of the data struct with the value*)
-	9: data.ix09 := value; (*Set index 9 of the data struct with the value*)
-	10: data.ix10 := value; (*Set index 10 of the data struct with the value*)
-	11: data.ix11 := value; (*Set index 11 of the data struct with the value*)
-	12: data.ix12 := value; (*Set index 12 of the data struct with the value*)
-	13: data.ix13 := value; (*Set index 13 of the data struct with the value*)
-	14: data.ix14 := value; (*Set index 14 of the data struct with the value*)
-	15: data.ix15 := value; (*Set index 15 of the data struct with the value*)
-	16: data.ix16 := value; (*Set index 16 of the data struct with the value*)
-	17: data.ix17 := value; (*Set index 17 of the data struct with the value*)
-	18: data.ix18 := value; (*Set index 18 of the data struct with the value*)
-	19: data.ix19 := value; (*Set index 19 of the data struct with the value*)
-	20: data.ix20 := value; (*Set index 20 of the data struct with the value*)
-	21: data.ix21 := value; (*Set index 21 of the data struct with the value*)
-	22: data.ix22 := value; (*Set index 22 of the data struct with the value*)
-	23: data.ix23 := value; (*Set index 23 of the data struct with the value*)
-	24: data.ix24 := value; (*Set index 24 of the data struct with the value*)
-	25: data.ix25 := value; (*Set index 25 of the data struct with the value*)
-	26: data.ix26 := value; (*Set index 26 of the data struct with the value*)
-	27: data.ix27 := value; (*Set index 27 of the data struct with the value*)
-	28: data.ix28 := value; (*Set index 28 of the data struct with the value*)
-	29: data.ix29 := value; (*Set index 29 of the data struct with the value*)
-	30: data.ix30 := value; (*Set index 30 of the data struct with the value*)
-	31: data.ix31 := value; (*Set index 31 of the data struct with the value*)
-ELSE
-	(*Index is invalid, don't write anything, return false*)
-	setDword32 := FALSE;
-	RETURN;
-END_CASE
-setDword32 := TRUE;
-RETURN;
+    	0: data.ix00 := value; (*Set index 0 of the data struct with the value*)
+    	1: data.ix01 := value; (*Set index 1 of the data struct with the value*)
+    	2: data.ix02 := value; (*Set index 2 of the data struct with the value*)
+    	3: data.ix03 := value; (*Set index 3 of the data struct with the value*)
+    	4: data.ix04 := value; (*Set index 4 of the data struct with the value*)
+    	5: data.ix05 := value; (*Set index 5 of the data struct with the value*)
+    	6: data.ix06 := value; (*Set index 6 of the data struct with the value*)
+    	7: data.ix07 := value; (*Set index 7 of the data struct with the value*)
+    	8: data.ix08 := value; (*Set index 8 of the data struct with the value*)
+    	9: data.ix09 := value; (*Set index 9 of the data struct with the value*)
+    	10: data.ix10 := value; (*Set index 10 of the data struct with the value*)
+    	11: data.ix11 := value; (*Set index 11 of the data struct with the value*)
+    	12: data.ix12 := value; (*Set index 12 of the data struct with the value*)
+    	13: data.ix13 := value; (*Set index 13 of the data struct with the value*)
+    	14: data.ix14 := value; (*Set index 14 of the data struct with the value*)
+    	15: data.ix15 := value; (*Set index 15 of the data struct with the value*)
+    	16: data.ix16 := value; (*Set index 16 of the data struct with the value*)
+    	17: data.ix17 := value; (*Set index 17 of the data struct with the value*)
+    	18: data.ix18 := value; (*Set index 18 of the data struct with the value*)
+    	19: data.ix19 := value; (*Set index 19 of the data struct with the value*)
+    	20: data.ix20 := value; (*Set index 20 of the data struct with the value*)
+    	21: data.ix21 := value; (*Set index 21 of the data struct with the value*)
+    	22: data.ix22 := value; (*Set index 22 of the data struct with the value*)
+    	23: data.ix23 := value; (*Set index 23 of the data struct with the value*)
+    	24: data.ix24 := value; (*Set index 24 of the data struct with the value*)
+    	25: data.ix25 := value; (*Set index 25 of the data struct with the value*)
+    	26: data.ix26 := value; (*Set index 26 of the data struct with the value*)
+    	27: data.ix27 := value; (*Set index 27 of the data struct with the value*)
+    	28: data.ix28 := value; (*Set index 28 of the data struct with the value*)
+    	29: data.ix29 := value; (*Set index 29 of the data struct with the value*)
+    	30: data.ix30 := value; (*Set index 30 of the data struct with the value*)
+    	31: data.ix31 := value; (*Set index 31 of the data struct with the value*)
+    ELSE
+    	(*Index is invalid, don't write anything, return false*)
+    	setDword32 := FALSE;
+    	RETURN;
+    END_CASE
+    setDword32 := TRUE;
+    RETURN;
 
 END_FUNCTION
 ```

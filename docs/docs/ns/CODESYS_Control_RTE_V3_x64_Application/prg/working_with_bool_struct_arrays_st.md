@@ -17,26 +17,26 @@ END_INTERFACE
 PROGRAM working_with_bool_struct_arrays:
     // WORKING WITH BOOLEAN STRUCT ARRAYS
 
-//This returns index 1 of the struct
-resultBool := getBool32(bools, 1);
+    //This returns index 1 of the struct
+    resultBool := getBool32(bools, 1);
 
-//This will copy over the struct array to another array
-//movedBools := bools;
-// OR
-FOR i:=0 TO 31 DO
-	setBool32(movedBools, i, getBool32(bools, i));
-END_FOR
+    //This will copy over the struct array to another array
+    //movedBools := bools;
+    // OR
+    FOR i:=0 TO 31 DO
+    	setBool32(movedBools, i, getBool32(bools, i));
+    END_FOR
 
-//This will initialize/reset/fill the struct array with some values
-FOR i:=0 TO 31 DO
-	setBool32(initBools, i, TRUE);
-END_FOR
+    //This will initialize/reset/fill the struct array with some values
+    FOR i:=0 TO 31 DO
+    	setBool32(initBools, i, TRUE);
+    END_FOR
 
-//This will copy over the struct array to another array and do some extra logic
-FOR i:=0 TO 31 DO
-	currentBool := getBool32(bools, i);
-	setBool32(invertedBools, i, NOT currentBool);
-END_FOR
+    //This will copy over the struct array to another array and do some extra logic
+    FOR i:=0 TO 31 DO
+    	currentBool := getBool32(bools, i);
+    	setBool32(invertedBools, i, NOT currentBool);
+    END_FOR
 
 
 

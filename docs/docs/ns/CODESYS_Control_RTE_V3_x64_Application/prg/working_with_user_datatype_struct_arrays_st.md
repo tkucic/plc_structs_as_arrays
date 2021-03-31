@@ -17,33 +17,33 @@ END_INTERFACE
 PROGRAM working_with_user_datatype_struct_arrays:
     // WORKING WITH USER DATA TYPE STRUCT ARRAYS
 
-FOR i:=0 TO 31 DO
-	//For easier data manipulation, extract current devices commands and status
-	//Now the getters must be function blocks as we cannot return as structure in iec
-	getCmd(data:=deviceCmds, ix:=i);
-	getStatus(data:=deviceStatuses, ix:=i);
-	deviceCmd := getCmd.Out;
-	deviceStatus := getStatus.Out;
-	
-	//If device is running, set the reference to 200
-	IF deviceStatus.Running THEN
-		deviceCmd.Ref := 200;
-	ELSE
-		deviceCmd.Ref := 0;
-	END_IF
-	
-	//Reset device only if it has stopped
-	deviceCmd.ResetCmd := deviceStatus.ResetRequired AND NOT deviceStatus.Running;
-	
-	//Start/Stop the device by writing to deviceCmds.udt_cmdXX from the init window*)
-	deviceCmd.StartCmd := (deviceCmd.StartCmd OR deviceStatus.Running) AND NOT (deviceStatus.ResetRequired OR deviceCmd.StopCmd);
-	
-	//Finally write the new command data to the array
-	//As we always return TRUE or FALSE we can keep this as a function
-	setUDT_Cmd32(deviceCmds, i, deviceCmd);
-	
-END_FOR
-// Manipulate the deviceStatuses from the init window
+    FOR i:=0 TO 31 DO
+    	//For easier data manipulation, extract current devices commands and status
+    	//Now the getters must be function blocks as we cannot return as structure in iec
+    	getCmd(data:=deviceCmds, ix:=i);
+    	getStatus(data:=deviceStatuses, ix:=i);
+    	deviceCmd := getCmd.Out;
+    	deviceStatus := getStatus.Out;
+    	
+    	//If device is running, set the reference to 200
+    	IF deviceStatus.Running THEN
+    		deviceCmd.Ref := 200;
+    	ELSE
+    		deviceCmd.Ref := 0;
+    	END_IF
+    	
+    	//Reset device only if it has stopped
+    	deviceCmd.ResetCmd := deviceStatus.ResetRequired AND NOT deviceStatus.Running;
+    	
+    	//Start/Stop the device by writing to deviceCmds.udt_cmdXX from the init window*)
+    	deviceCmd.StartCmd := (deviceCmd.StartCmd OR deviceStatus.Running) AND NOT (deviceStatus.ResetRequired OR deviceCmd.StopCmd);
+    	
+    	//Finally write the new command data to the array
+    	//As we always return TRUE or FALSE we can keep this as a function
+    	setUDT_Cmd32(deviceCmds, i, deviceCmd);
+    	
+    END_FOR
+    // Manipulate the deviceStatuses from the init window
 END_PROGRAM
 ```
 

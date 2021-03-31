@@ -14,45 +14,45 @@ INTERFACE
 END_INTERFACE
 FUNCTION setUDT_Cmd32 :
     CASE ix OF
-	0: data.udt00 := value; (*Set index 0 of the data struct with the value*)
-	1: data.udt01 := value; (*Set index 1 of the data struct with the value*)
-	2: data.udt02 := value; (*Set index 2 of the data struct with the value*)
-	3: data.udt03 := value; (*Set index 3 of the data struct with the value*)
-	4: data.udt04 := value; (*Set index 4 of the data struct with the value*)
-	5: data.udt05 := value; (*Set index 5 of the data struct with the value*)
-	6: data.udt06 := value; (*Set index 6 of the data struct with the value*)
-	7: data.udt07 := value; (*Set index 7 of the data struct with the value*)
-	8: data.udt08 := value; (*Set index 8 of the data struct with the value*)
-	9: data.udt09 := value; (*Set index 9 of the data struct with the value*)
-	10: data.udt10 := value; (*Set index 10 of the data struct with the value*)
-	11: data.udt11 := value; (*Set index 11 of the data struct with the value*)
-	12: data.udt12 := value; (*Set index 12 of the data struct with the value*)
-	13: data.udt13 := value; (*Set index 13 of the data struct with the value*)
-	14: data.udt14 := value; (*Set index 14 of the data struct with the value*)
-	15: data.udt15 := value; (*Set index 15 of the data struct with the value*)
-	16: data.udt16 := value; (*Set index 16 of the data struct with the value*)
-	17: data.udt17 := value; (*Set index 17 of the data struct with the value*)
-	18: data.udt18 := value; (*Set index 18 of the data struct with the value*)
-	19: data.udt19 := value; (*Set index 19 of the data struct with the value*)
-	20: data.udt20 := value; (*Set index 20 of the data struct with the value*)
-	21: data.udt21 := value; (*Set index 21 of the data struct with the value*)
-	22: data.udt22 := value; (*Set index 22 of the data struct with the value*)
-	23: data.udt23 := value; (*Set index 23 of the data struct with the value*)
-	24: data.udt24 := value; (*Set index 24 of the data struct with the value*)
-	25: data.udt25 := value; (*Set index 25 of the data struct with the value*)
-	26: data.udt26 := value; (*Set index 26 of the data struct with the value*)
-	27: data.udt27 := value; (*Set index 27 of the data struct with the value*)
-	28: data.udt28 := value; (*Set index 28 of the data struct with the value*)
-	29: data.udt29 := value; (*Set index 29 of the data struct with the value*)
-	30: data.udt30 := value; (*Set index 30 of the data struct with the value*)
-	31: data.udt31 := value; (*Set index 31 of the data struct with the value*)
-ELSE
-	(*Index is invalid, don't write anything, return false*)
-	setUDT_Cmd32 := FALSE;
-	RETURN;
-END_CASE
-setUDT_Cmd32 := TRUE;
-RETURN;
+    	0: data.udt00 := value; (*Set index 0 of the data struct with the value*)
+    	1: data.udt01 := value; (*Set index 1 of the data struct with the value*)
+    	2: data.udt02 := value; (*Set index 2 of the data struct with the value*)
+    	3: data.udt03 := value; (*Set index 3 of the data struct with the value*)
+    	4: data.udt04 := value; (*Set index 4 of the data struct with the value*)
+    	5: data.udt05 := value; (*Set index 5 of the data struct with the value*)
+    	6: data.udt06 := value; (*Set index 6 of the data struct with the value*)
+    	7: data.udt07 := value; (*Set index 7 of the data struct with the value*)
+    	8: data.udt08 := value; (*Set index 8 of the data struct with the value*)
+    	9: data.udt09 := value; (*Set index 9 of the data struct with the value*)
+    	10: data.udt10 := value; (*Set index 10 of the data struct with the value*)
+    	11: data.udt11 := value; (*Set index 11 of the data struct with the value*)
+    	12: data.udt12 := value; (*Set index 12 of the data struct with the value*)
+    	13: data.udt13 := value; (*Set index 13 of the data struct with the value*)
+    	14: data.udt14 := value; (*Set index 14 of the data struct with the value*)
+    	15: data.udt15 := value; (*Set index 15 of the data struct with the value*)
+    	16: data.udt16 := value; (*Set index 16 of the data struct with the value*)
+    	17: data.udt17 := value; (*Set index 17 of the data struct with the value*)
+    	18: data.udt18 := value; (*Set index 18 of the data struct with the value*)
+    	19: data.udt19 := value; (*Set index 19 of the data struct with the value*)
+    	20: data.udt20 := value; (*Set index 20 of the data struct with the value*)
+    	21: data.udt21 := value; (*Set index 21 of the data struct with the value*)
+    	22: data.udt22 := value; (*Set index 22 of the data struct with the value*)
+    	23: data.udt23 := value; (*Set index 23 of the data struct with the value*)
+    	24: data.udt24 := value; (*Set index 24 of the data struct with the value*)
+    	25: data.udt25 := value; (*Set index 25 of the data struct with the value*)
+    	26: data.udt26 := value; (*Set index 26 of the data struct with the value*)
+    	27: data.udt27 := value; (*Set index 27 of the data struct with the value*)
+    	28: data.udt28 := value; (*Set index 28 of the data struct with the value*)
+    	29: data.udt29 := value; (*Set index 29 of the data struct with the value*)
+    	30: data.udt30 := value; (*Set index 30 of the data struct with the value*)
+    	31: data.udt31 := value; (*Set index 31 of the data struct with the value*)
+    ELSE
+    	(*Index is invalid, don't write anything, return false*)
+    	setUDT_Cmd32 := FALSE;
+    	RETURN;
+    END_CASE
+    setUDT_Cmd32 := TRUE;
+    RETURN;
 
 END_FUNCTION
 ```
