@@ -36,7 +36,6 @@ STRUCT DATE_AND_TIME32:
     ix29 : DT; (*Index 29 of struct array *)
     ix30 : DT; (*Index 30 of struct array *)
     ix31 : DT; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

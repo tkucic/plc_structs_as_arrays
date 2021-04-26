@@ -4,7 +4,7 @@
 
 ```pascal
 INTERFACE
-    VAR_INPUT
+    VAR_INPUT 
         data : UDINT32; (*Data to work on*)
         ix : USINT; (*Index to retrieve*)
     END_VAR
@@ -54,9 +54,7 @@ END_FUNCTION
 
 ## Metrics  
 
-| VAR_IN | VAR_OUT | VAR_IN_OUT | VAR_TEMP | VAR_LOCAL |
-| ------ | ------- | ---------- | --------- | -------- |
-| 2 | 0 | 0 | 0 | 0 |  
+- VAR_INPUT : 2
 
 | Lines of code | Maintainable size |
 | ------------- | ----------------- |

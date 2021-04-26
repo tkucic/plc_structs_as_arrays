@@ -4,7 +4,7 @@
 
 ```pascal
 INTERFACE
-    VAR
+    VAR 
         nums : INT32; (*INTEGER 32 array initialized with some values*)
         resultNum : INT; (*Corresponds to index 1 of nums struct array*)
         currentNum : INT; (*Used to store current iterated data *)
@@ -45,9 +45,7 @@ END_PROGRAM
 
 ## Metrics  
 
-| VAR_IN | VAR_OUT | VAR_IN_OUT | VAR_LOCAL | VAR_EXTERNAL | VAR_GLOBAL | VAR_ACCESS | VAR_TEMP |
-| ------ | ------- | ---------- | --------- | ------------ | ---------- | ---------- | -------- |
-| 0 | 0 | 0 | 7 | 0 | 0 | 0 | 0 |
+- VAR : 7
 
 | Actions | Lines of code | Maintainable size |
 | ------- | ------------- | ----------------- |

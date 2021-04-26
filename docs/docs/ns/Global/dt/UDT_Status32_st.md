@@ -36,7 +36,6 @@ STRUCT UDT_Status32:
     udt29 : UDT_Status; (*User data type array index 29*)
     udt30 : UDT_Status; (*User data type array index 30*)
     udt31 : UDT_Status; (*User data type array index 31*)
-  
 END_STRUCT
 ```
 

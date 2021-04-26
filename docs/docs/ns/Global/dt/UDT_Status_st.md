@@ -7,7 +7,6 @@ STRUCT UDT_Status:
     Running : BOOL; (*Device is running *)
     ResetRequired : BOOL; (*Device needs a reset*)
     RefActual : REAL; (*Devices used reference*)
-  
 END_STRUCT
 ```
 

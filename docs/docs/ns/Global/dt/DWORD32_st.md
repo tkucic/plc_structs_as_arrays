@@ -36,7 +36,6 @@ STRUCT DWORD32:
     ix29 : DWORD; (*Index 29 of struct array *)
     ix30 : DWORD; (*Index 30 of struct array *)
     ix31 : DWORD; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

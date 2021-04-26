@@ -36,7 +36,6 @@ STRUCT INT32:
     ix29 : INT; (*Index 29 of struct array *)
     ix30 : INT; (*Index 30 of struct array *)
     ix31 : INT; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

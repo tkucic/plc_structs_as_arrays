@@ -4,12 +4,12 @@
 
 ```pascal
 INTERFACE
-    VAR_INPUT
+    VAR_IN_OUT 
+        data : UDINT32; (*Data to work on*)
+    END_VAR
+    VAR_INPUT 
         ix : USINT; (*Index to write*)
         value : UDINT; (*Value to set to the index*)
-    END_VAR
-    VAR_IN_OUT
-        data : UDINT32; (*Data to work on*)
     END_VAR
 END_INTERFACE
 FUNCTION setUdint32 :
@@ -59,9 +59,8 @@ END_FUNCTION
 
 ## Metrics  
 
-| VAR_IN | VAR_OUT | VAR_IN_OUT | VAR_TEMP | VAR_LOCAL |
-| ------ | ------- | ---------- | --------- | -------- |
-| 2 | 0 | 1 | 0 | 0 |  
+- VAR_IN_OUT : 1
+- VAR_INPUT : 2
 
 | Lines of code | Maintainable size |
 | ------------- | ----------------- |

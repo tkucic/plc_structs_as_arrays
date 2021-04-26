@@ -36,7 +36,6 @@ STRUCT REAL32:
     ix29 : REAL; (*Index 29 of struct array *)
     ix30 : REAL; (*Index 30 of struct array *)
     ix31 : REAL; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

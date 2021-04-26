@@ -8,7 +8,6 @@ STRUCT UDT_Cmd:
     StopCmd : BOOL; (*Stop command to the device*)
     ResetCmd : BOOL; (*Reset command for the device*)
     Ref : REAL; (*Reference for the device to follow*)
-  
 END_STRUCT
 ```
 

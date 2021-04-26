@@ -36,7 +36,6 @@ STRUCT BOOL32:
     ix29 : BOOL; (*Index 29 of struct array *)
     ix30 : BOOL; (*Index 30 of struct array *)
     ix31 : BOOL; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

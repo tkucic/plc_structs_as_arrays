@@ -36,7 +36,6 @@ STRUCT LWORD32:
     ix29 : LWORD; (*Index 29 of struct array *)
     ix30 : LWORD; (*Index 30 of struct array *)
     ix31 : LWORD; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

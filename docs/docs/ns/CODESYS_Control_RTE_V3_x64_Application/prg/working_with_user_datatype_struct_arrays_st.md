@@ -4,7 +4,7 @@
 
 ```pascal
 INTERFACE
-    VAR
+    VAR 
         deviceCmds : UDT_Cmd32; (*Structure array that holds all devices commands*)
         deviceStatuses : UDT_Status32; (*Structure array that holds all devices statuses*)
         deviceCmd : UDT_Cmd; (*Structure that holds commands only of the device currently iterated*)
@@ -49,9 +49,7 @@ END_PROGRAM
 
 ## Metrics  
 
-| VAR_IN | VAR_OUT | VAR_IN_OUT | VAR_LOCAL | VAR_EXTERNAL | VAR_GLOBAL | VAR_ACCESS | VAR_TEMP |
-| ------ | ------- | ---------- | --------- | ------------ | ---------- | ---------- | -------- |
-| 0 | 0 | 0 | 7 | 0 | 0 | 0 | 0 |
+- VAR : 7
 
 | Actions | Lines of code | Maintainable size |
 | ------- | ------------- | ----------------- |

@@ -36,7 +36,6 @@ STRUCT LREAL32:
     ix29 : LREAL; (*Index 29 of struct array *)
     ix30 : LREAL; (*Index 30 of struct array *)
     ix31 : LREAL; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

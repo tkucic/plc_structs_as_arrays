@@ -36,7 +36,6 @@ STRUCT LDATE32:
     ix29 : LDATE; (*Index 29 of struct array *)
     ix30 : LDATE; (*Index 30 of struct array *)
     ix31 : LDATE; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

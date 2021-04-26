@@ -36,7 +36,6 @@ STRUCT TIME32:
     ix29 : TIME; (*Index 29 of struct array *)
     ix30 : TIME; (*Index 30 of struct array *)
     ix31 : TIME; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

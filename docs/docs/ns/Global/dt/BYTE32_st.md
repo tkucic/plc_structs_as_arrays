@@ -36,7 +36,6 @@ STRUCT BYTE32:
     ix29 : BYTE; (*Index 29 of struct array *)
     ix30 : BYTE; (*Index 30 of struct array *)
     ix31 : BYTE; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

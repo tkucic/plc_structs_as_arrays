@@ -36,7 +36,6 @@ STRUCT WSTRING32:
     ix29 : wstring; (*Index 29 of struct array *)
     ix30 : wstring; (*Index 30 of struct array *)
     ix31 : wstring; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

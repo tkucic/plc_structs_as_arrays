@@ -36,7 +36,6 @@ STRUCT STRING32:
     ix29 : STRING[None]; (*Index 29 of struct array *)
     ix30 : STRING[None]; (*Index 30 of struct array *)
     ix31 : STRING[None]; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

@@ -36,7 +36,6 @@ STRUCT TIME_OF_DAY32:
     ix29 : TOD; (*Index 29 of struct array *)
     ix30 : TOD; (*Index 30 of struct array *)
     ix31 : TOD; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

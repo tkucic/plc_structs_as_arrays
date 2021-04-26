@@ -4,11 +4,11 @@
 
 ```pascal
 INTERFACE
-    VAR_INPUT
+    VAR_INPUT 
         data : UDT_Status32; (*Data to work on*)
         ix : USINT; (*Index to retrieve*)
     END_VAR
-    VAR_OUTPUT
+    VAR_OUTPUT 
         Out : UDT_Status; (*Returned data*)
     END_VAR
 END_INTERFACE
@@ -56,9 +56,8 @@ END_FUNCTION_BLOCK
 
 ## Metrics  
 
-| VAR_IN | VAR_OUT | VAR_IN_OUT | VAR_LOCAL | VAR_EXTERNAL | VAR_TEMP |
-| ------ | ------- | ---------- | --------- | ------------ | -------- |
-| 2 | 1 | 0 | 0 | 0 | 0 |
+- VAR_INPUT : 2
+- VAR_OUTPUT : 1
 
 | Actions | Lines of code | Maintainable size |
 | ------- | ------------- | ----------------- |

@@ -36,7 +36,6 @@ STRUCT ULINT32:
     ix29 : ULINT; (*Index 29 of struct array *)
     ix30 : ULINT; (*Index 30 of struct array *)
     ix31 : ULINT; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 

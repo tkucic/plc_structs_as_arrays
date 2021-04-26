@@ -36,7 +36,6 @@ STRUCT UDINT32:
     ix29 : UDINT; (*Index 29 of struct array *)
     ix30 : UDINT; (*Index 30 of struct array *)
     ix31 : UDINT; (*Index 31 of struct array *)
-  
 END_STRUCT
 ```
 
